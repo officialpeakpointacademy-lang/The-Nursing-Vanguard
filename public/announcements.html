@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Announcements | The Nursing Vanguard</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-brand">
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a href="/member" class="nav-item">
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="/courses.html" class="nav-item">
+          <span>📚</span>
+          <span>My Courses</span>
+        </a>
+
+        <a href="/learning.html" class="nav-item">
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a href="/leaderboard.html" class="nav-item">
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <a href="/library.html" class="nav-item">
+          <span>📖</span>
+          <span>Library</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+        <a href="/announcements.html" class="nav-item active">
+          <span>📢</span>
+          <span>Announcements</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>💳</span>
+          <span>Contributions</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🎯</span>
+          <span>Challenges</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>👥</span>
+          <span>Community</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-item logout-button"
+          id="logoutButton"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+
+        <button
+          type="button"
+          id="menuToggle"
+          class="menu-toggle"
+        >
+          ☰
+        </button>
+
+        <div class="topbar-title">
+          <h2>Announcements</h2>
+          <p>Stay updated with TNV news and important information.</p>
+        </div>
+
+        <div class="topbar-user">
+
+          <div class="topbar-user-info">
+            <strong id="topUserName">Member</strong>
+            <span id="topUserId">TNV/---</span>
+          </div>
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            TN
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- PAGE -->
+      <section class="page-content announcements-page">
+
+        <!-- INTRO -->
+        <div class="announcements-intro">
+
+          <div>
+            <span class="announcements-label">
+              THE NURSING VANGUARD
+            </span>
+
+            <h1>Announcements</h1>
+
+            <p>
+              Keep up with academic updates, assessments,
+              events and important notices from TNV.
+            </p>
+          </div>
+
+          <div class="announcements-intro-icon">
+            📢
+          </div>
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="announcements-toolbar">
+
+          <div class="announcement-search">
+            <input
+              type="search"
+              id="announcementSearch"
+              placeholder="Search announcements..."
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="announcement-filter">
+
+            <select id="announcementCategory">
+
+              <option value="all">
+                All Announcements
+              </option>
+
+              <option value="General">
+                General
+              </option>
+
+              <option value="Academic">
+                Academic
+              </option>
+
+              <option value="Assessment">
+                Assessment
+              </option>
+
+              <option value="Event">
+                Event
+              </option>
+
+              <option value="Important">
+                Important
+              </option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <!-- ANNOUNCEMENTS -->
+        <div
+          id="announcementsList"
+          class="announcements-list"
+        ></div>
+
+
+        <!-- LOADING -->
+        <div
+          id="announcementsLoading"
+          class="announcements-state"
+        >
+          <div class="state-icon">📢</div>
+
+          <h3>Loading announcements...</h3>
+
+          <p>
+            Please wait while we load the latest updates.
+          </p>
+        </div>
+
+
+        <!-- EMPTY -->
+        <div
+          id="announcementsEmpty"
+          class="announcements-state"
+          style="display: none;"
+        >
+          <div class="state-icon">📭</div>
+
+          <h3>No announcements yet</h3>
+
+          <p>
+            There are currently no announcements to display.
+          </p>
+        </div>
+
+
+        <!-- NO SEARCH RESULTS -->
+        <div
+          id="announcementsNoResults"
+          class="announcements-state"
+          style="display: none;"
+        >
+          <div class="state-icon">🔎</div>
+
+          <h3>No matching announcements</h3>
+
+          <p>
+            Try a different search term or category.
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="/js/announcements.js"></script>
+
+</body>
+</html>

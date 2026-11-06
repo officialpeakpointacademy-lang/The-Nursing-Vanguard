@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Library | The Nursing Vanguard</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+
+</head>
+
+
+<body class="dashboard-page library-page">
+
+  <div class="app-shell">
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside
+      class="sidebar"
+      id="sidebar"
+    >
+
+      <div class="sidebar-brand">
+
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+
+        <a
+          href="/member"
+          class="nav-item"
+        >
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+
+        <a
+          href="/courses.html"
+          class="nav-item"
+        >
+          <span>📚</span>
+          <span>My Courses</span>
+        </a>
+
+
+        <a
+          href="/learning.html"
+          class="nav-item"
+        >
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+
+        <a
+          href="/leaderboard.html"
+          class="nav-item"
+        >
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+
+        <a
+          href="/profile.html"
+          class="nav-item"
+        >
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+
+        <a
+          href="/library.html"
+          class="nav-item active"
+        >
+          <span>📖</span>
+          <span>Library</span>
+        </a>
+
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>📢</span>
+          <span>Announcements</span>
+        </a>
+
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>💰</span>
+          <span>Contributions</span>
+        </a>
+
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🏆</span>
+          <span>Challenges</span>
+        </a>
+
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>👥</span>
+          <span>Community</span>
+        </a>
+
+
+      </nav>
+
+
+      <div class="sidebar-bottom">
+
+
+        <a
+          href="/profile.html"
+          class="nav-item"
+        >
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+
+        <button
+          id="logoutBtn"
+          class="logout-btn"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          ☰
+        </button>
+
+
+        <div class="topbar-title">
+
+          <h1>Library</h1>
+
+          <p>
+            Your nursing academic resource centre
+          </p>
+
+        </div>
+
+
+        <div class="topbar-user">
+
+
+          <div class="notification">
+            🔔
+            <span class="notification-dot"></span>
+          </div>
+
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            U
+          </div>
+
+
+          <div class="user-info">
+
+            <strong id="topUserName">
+              Member
+            </strong>
+
+            <small id="topUserId">
+              TNV/000
+            </small>
+
+          </div>
+
+
+        </div>
+
+      </header>
+
+
+
+      <!-- PAGE CONTENT -->
+
+      <section class="page-content">
+
+
+        <!-- INTRO -->
+
+        <div class="library-intro">
+
+
+          <div>
+
+            <span class="library-label">
+              THE NURSING VANGUARD LIBRARY
+            </span>
+
+
+            <h2>
+              Learn. Explore. Grow.
+            </h2>
+
+
+            <p>
+              Access carefully selected nursing,
+              medical and academic resources from
+              trusted public and open educational
+              sources.
+            </p>
+
+          </div>
+
+
+          <div class="library-intro-icon">
+            📚
+          </div>
+
+
+        </div>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="library-search-card">
+
+          <div>
+
+            <span class="section-label">
+              RESOURCE SEARCH
+            </span>
+
+            <h3>
+              Find a study resource
+            </h3>
+
+          </div>
+
+
+          <input
+            type="search"
+            id="librarySearch"
+            placeholder="Search textbooks, nursing, anatomy, pharmacology..."
+          >
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <div class="library-section-heading">
+
+          <div>
+
+            <span class="section-label">
+              EXPLORE
+            </span>
+
+            <h2>
+              Academic Resources
+            </h2>
+
+          </div>
+
+          <span>
+            Open resources selected for nursing students.
+          </span>
+
+        </div>
+
+
+
+        <div
+          class="library-grid"
+          id="libraryGrid"
+        >
+        
+<div id="libraryNoResults" class="library-no-results" style="display: none;">
+  <div class="library-no-results-icon">🔎</div>
+  <h3>No resources found</h3>
+  <p>Try searching with a different keyword.</p>
+</div>
+
+          <!-- OPENSTAX -->
+
+          <article
+            class="library-card"
+            data-category="textbooks nursing fundamentals anatomy physiology pharmacology"
+          >
+
+            <div class="library-card-icon">
+              📚
+            </div>
+
+
+            <span class="library-card-tag">
+              OPEN TEXTBOOKS
+            </span>
+
+
+            <h3>
+              OpenStax Nursing
+            </h3>
+
+
+            <p>
+              Free, openly licensed textbooks and
+              learning resources covering nursing and
+              related health science subjects.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                📖 Free resource
+              </span>
+
+
+              <a
+                href="https://openstax.org/subjects/nursing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Explore →
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- NCBI -->
+
+          <article
+            class="library-card"
+            data-category="medical nursing healthcare books research"
+          >
+
+            <div class="library-card-icon">
+              🧬
+            </div>
+
+
+            <span class="library-card-tag">
+              MEDICAL REFERENCE
+            </span>
+
+
+            <h3>
+              NCBI Bookshelf
+            </h3>
+
+
+            <p>
+              Free access to books and documents in
+              life sciences, medicine and healthcare.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                🔬 Medical reference
+              </span>
+
+
+              <a
+                href="https://www.ncbi.nlm.nih.gov/books/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Explore →
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- OPEN RN -->
+
+          <article
+            class="library-card"
+            data-category="nursing fundamentals skills pharmacology community mental health"
+          >
+
+            <div class="library-card-icon">
+              🩺
+            </div>
+
+
+            <span class="library-card-tag">
+              NURSING OER
+            </span>
+
+
+            <h3>
+              Open RN Textbooks
+            </h3>
+
+
+            <p>
+              Open nursing textbooks covering
+              fundamentals, pharmacology, skills,
+              health promotion and community concepts.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                📘 Nursing OER
+              </span>
+
+
+              <a
+                href="https://www.ncbi.nlm.nih.gov/books/NBK590025/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Explore →
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- NUNSA OAU -->
+
+          <article
+            class="library-card"
+            data-category="nigeria nursing class materials textbooks 200 level 300 level 400 level"
+          >
+
+            <div class="library-card-icon">
+              🇳🇬
+            </div>
+
+
+            <span class="library-card-tag">
+              NIGERIAN NURSING
+            </span>
+
+
+            <h3>
+              NUNSA OAU Library
+            </h3>
+
+
+            <p>
+              Nursing-focused resources including
+              class materials, medical textbooks,
+              videos and other student resources.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                🇳🇬 Nigerian resource
+              </span>
+
+
+              <a
+                href="https://nunsa.oauife.edu.ng/document-category/general-library/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Explore →
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ANATOMY -->
+
+          <article
+            class="library-card"
+            data-category="anatomy physiology human body videos nursing"
+          >
+
+            <div class="library-card-icon">
+              🫀
+            </div>
+
+
+            <span class="library-card-tag">
+              ANATOMY & PHYSIOLOGY
+            </span>
+
+
+            <h3>
+              Anatomy & Physiology Resources
+            </h3>
+
+
+            <p>
+              Explore anatomy and physiology learning
+              materials, videos and reference resources
+              useful for nursing students.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                🧠 Human body
+              </span>
+
+
+              <a
+                href="https://nunsa.oauife.edu.ng/document-category/video-library/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Explore →
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- NURSING FUNDAMENTALS -->
+
+          <article
+            class="library-card"
+            data-category="nursing fundamentals patient care clinical skills infection nutrition elimination"
+          >
+
+            <div class="library-card-icon">
+              👩‍⚕️
+            </div>
+
+
+            <span class="library-card-tag">
+              FUNDAMENTALS
+            </span>
+
+
+            <h3>
+              Nursing Fundamentals
+            </h3>
+
+
+            <p>
+              An open nursing textbook covering
+              foundational nursing knowledge, patient
+              care, clinical concepts and essential skills.
+            </p>
+
+
+            <div class="library-card-footer">
+
+              <span>
+                📗 Open textbook
+              </span>
+
+
+              <a
+                href="https://www.ncbi.nlm.nih.gov/books/NBK610815/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="library-btn"
+              >
+                Read →
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+
+        <!-- NOTICE -->
+
+        <section class="library-notice">
+
+          <div class="library-notice-icon">
+            💡
+          </div>
+
+
+          <div>
+
+            <h3>
+              About TNV Library
+            </h3>
+
+
+            <p>
+              The Nursing Vanguard Library provides
+              links to selected public, open-access and
+              educational resources. External resources
+              remain the property of their respective
+              publishers and organizations.
+            </p>
+
+          </div>
+
+        </section>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+
+  <div
+    class="mobile-overlay"
+    id="mobileOverlay"
+  ></div>
+
+
+  <script src="/js/library.js"></script>
+
+</body>
+
+</html>

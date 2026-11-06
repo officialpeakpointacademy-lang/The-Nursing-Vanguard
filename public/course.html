@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Course | The Nursing Vanguard</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <div class="app-shell">
+
+
+    <!-- SIDEBAR -->
+
+    <aside
+      class="sidebar"
+      id="sidebar"
+    >
+
+      <div class="sidebar-brand">
+
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <a
+          href="/dashboard.html"
+          class="nav-item"
+        >
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+
+        <a
+          href="/learning.html"
+          class="nav-item"
+        >
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+
+        <a
+          href="/leaderboard.html"
+          class="nav-item"
+        >
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+
+        <a
+          href="/profile.html"
+          class="nav-item"
+        >
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+
+        <a
+          href="/courses.html"
+          class="nav-item active"
+        >
+          <span>📚</span>
+          <span>Courses</span>
+        </a>
+
+        <a href="/library.html" class="nav-item">
+  <span>📚</span>
+  <span>Library</span>
+</a>
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-bottom">
+
+        <button
+          id="logoutBtn"
+          class="logout-btn"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div
+      class="mobile-overlay"
+      id="mobileOverlay"
+    ></div>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          ☰
+        </button>
+
+
+        <div class="topbar-title">
+
+          <h1 id="pageTitle">
+            Course
+          </h1>
+
+          <p>
+            The Nursing Vanguard Academic Hub
+          </p>
+
+        </div>
+
+
+        <div class="topbar-user">
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            A
+          </div>
+
+
+          <div class="topbar-user-info">
+
+            <strong id="topUserName">
+              Vanguard Member
+            </strong>
+
+            <span id="topUserId">
+              TNV/000
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+
+      <!-- PAGE CONTENT -->
+
+      <section class="page-content">
+
+
+        <!-- BACK TO COURSES -->
+
+        <a
+          href="/courses.html"
+          class="secondary-btn"
+        >
+          ← Back to Courses
+        </a>
+
+
+
+        <!-- COURSE HERO -->
+
+        <section class="course-detail-hero">
+
+          <div
+            class="course-detail-icon"
+            id="courseIcon"
+          >
+            📚
+          </div>
+
+
+          <div class="course-detail-info">
+
+            <span
+              class="courses-label"
+              id="courseCode"
+            >
+              COURSE
+            </span>
+
+
+            <h2 id="courseTitle">
+              Course Title
+            </h2>
+
+
+            <p id="courseDescription">
+              Course description will appear here.
+            </p>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- COURSE OVERVIEW -->
+
+        <section class="course-detail-section">
+
+          <div class="course-section-header">
+
+            <div>
+
+              <span class="courses-label">
+                COURSE OVERVIEW
+              </span>
+
+              <h3>
+                Your Learning Space
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="course-section-grid">
+
+
+            <!-- TOPICS -->
+
+            <article class="course-section-card course-topics-card">
+
+  <div class="course-section-card-icon">
+    📚
+  </div>
+
+  <h4>
+    Course Topics
+  </h4>
+
+  <p>
+    Explore the topics covered in this course.
+  </p>
+
+  <div
+    class="course-topics-list"
+    id="courseTopics"
+  >
+  </div>
+
+</article>
+
+            <!-- MATERIALS -->
+
+            <article class="course-section-card">
+
+              <div class="course-section-card-icon">
+                📖
+              </div>
+
+              <h4>
+                Study Materials
+              </h4>
+
+              <p>
+                Lecture notes, PDFs, slides and other
+                study resources will appear here.
+              </p>
+
+              <button
+                class="secondary-btn"
+                type="button"
+              >
+                View Materials
+              </button>
+
+            </article>
+
+
+
+            <!-- ASSIGNMENTS -->
+
+            <article class="course-section-card">
+
+              <div class="course-section-card-icon">
+                📝
+              </div>
+
+              <h4>
+                Assignments
+              </h4>
+
+              <p>
+                Course assignments and academic tasks
+                will appear here.
+              </p>
+
+              <button
+                class="secondary-btn"
+                type="button"
+              >
+                View Assignments
+              </button>
+
+            </article>
+
+
+
+            <!-- QUIZZES -->
+
+            <article class="course-section-card">
+
+              <div class="course-section-card-icon">
+                🧠
+              </div>
+
+              <h4>
+                Quizzes
+              </h4>
+
+              <p>
+                Test your understanding with course
+                quizzes and assessments.
+              </p>
+
+              <button
+                class="secondary-btn"
+                type="button"
+              >
+                Start Quiz
+              </button>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- MY PROGRESS -->
+
+        <section class="course-detail-section">
+
+          <div class="course-section-header">
+
+            <div>
+
+              <span class="courses-label">
+                MY PROGRESS
+              </span>
+
+              <h3>
+                Course Progress
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="course-progress-box">
+
+            <div class="course-progress-top">
+
+              <strong>
+                Learning Progress
+              </strong>
+
+              <span id="courseProgressText">
+                0%
+              </span>
+
+            </div>
+
+
+            <div class="course-progress-bar">
+
+              <div
+                class="course-progress-fill"
+                id="courseProgressFill"
+                style="width: 0%;"
+              ></div>
+
+            </div>
+
+
+            <p>
+              Your course progress will update as
+              you complete topics, materials,
+              assignments and quizzes.
+            </p>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- COMING SOON -->
+
+        <section class="course-detail-section">
+
+          <div class="course-placeholder">
+
+            <div class="course-placeholder-icon">
+              🚀
+            </div>
+
+            <h3>
+              More Course Features Coming Soon
+            </h3>
+
+            <p>
+              The Nursing Vanguard will gradually
+              add lecture materials, topic tracking,
+              assignments, quizzes, discussions and
+              detailed progress tracking to this course.
+            </p>
+
+          </div>
+
+        </section>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+
+  <script src="/js/course.js"></script>
+
+</body>
+
+</html>

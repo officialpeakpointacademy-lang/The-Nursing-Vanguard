@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Community | The Nursing Vanguard</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/community.css">
+</head>
+
+<body class="community-page">
+
+  <div class="community-container">
+
+    <!-- HEADER -->
+    <header class="community-header">
+
+      <a href="/dashboard.html" class="community-brand">
+        <img src="/assets/logo.jpg" alt="The Nursing Vanguard Logo">
+
+        <div>
+          <strong>The Nursing Vanguard</strong>
+          <span>Member Community</span>
+        </div>
+      </a>
+
+      <a href="/dashboard.html" class="back-dashboard">
+        ← Back to Dashboard
+      </a>
+
+    </header>
+
+
+    <!-- PAGE INTRO -->
+    <section class="community-intro">
+
+      <div>
+        <span class="community-eyebrow">
+          CONNECT • SHARE • GROW
+        </span>
+
+        <h1>Community</h1>
+
+        <p>
+          A space for members to connect, share knowledge,
+          ask questions and grow together as future nurses.
+        </p>
+      </div>
+
+      <div class="community-icon">
+        👥
+      </div>
+
+    </section>
+
+
+    <!-- COMMUNITY CONTENT -->
+    <main class="community-layout">
+
+      <!-- POST COMPOSER -->
+      <section class="community-composer">
+
+        <div class="section-heading">
+          <div>
+            <h2>Start a discussion</h2>
+            <p>Share something with the community.</p>
+          </div>
+        </div>
+
+        <form id="communityPostForm">
+
+          <textarea
+            id="communityPostContent"
+            placeholder="What's on your mind? Share a question, idea, experience or useful resource..."
+            maxlength="5000"
+            required
+          ></textarea>
+
+          <div class="composer-footer">
+
+            <div class="category-control">
+
+              <label for="communityPostCategory">
+                Category
+              </label>
+
+              <select
+                id="communityPostCategory"
+                required
+              >
+                <option value="General">General</option>
+                <option value="Academic">Academic</option>
+                <option value="Clinical">Clinical</option>
+                <option value="Questions">Questions</option>
+                <option value="Resources">Resources</option>
+              </select>
+
+            </div>
+
+            <button
+              type="submit"
+              id="communityPostButton"
+            >
+              Publish Post
+            </button>
+
+          </div>
+
+          <p
+            id="communityFormMessage"
+            class="community-message"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </section>
+
+
+      <!-- DISCUSSION FEED -->
+      <section class="community-feed-section">
+
+        <div class="feed-heading">
+
+          <div>
+            <h2>Community discussions</h2>
+            <p>See what members are sharing.</p>
+          </div>
+
+          <button
+            type="button"
+            id="refreshCommunity"
+            class="refresh-button"
+          >
+            ↻ Refresh
+          </button>
+
+        </div>
+
+
+        <div
+          id="communityPosts"
+          class="community-posts"
+        >
+
+          <div class="community-loading">
+            Loading community discussions...
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="community-footer">
+      <p>
+        The Nursing Vanguard · Learn Together. Grow Together.
+      </p>
+    </footer>
+
+  </div>
+
+
+  <script src="/js/community.js"></script>
+
+</body>
+</html>

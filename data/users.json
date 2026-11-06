@@ -1,0 +1,214 @@
+[
+  {
+    "id": "TNV/001",
+    "name": "Adebayo Aishat Jumoke",
+    "passwordHash": "$2a$12$LbLan6tOkNk0PuLuUFQmFeBpVmw7eCKM6NFoE5X.PsyoziPyuZLy6",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 40,
+    "streak": 1,
+    "lastLearningDate": "2026-11-02"
+  },
+  {
+    "id": "TNV/002",
+    "name": "Adeyekun Adeyemi Tolulope",
+    "passwordHash": "$2a$12$34Y9Ld59bVVM8EB8YI58POCEcxqs9GuyRxPcIyr2JUsx1Xu1n8dmG",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/003",
+    "name": "Akhigbe Pretty Oye",
+    "passwordHash": "$2a$12$ZmoedtySSh0AMcvFSFCEfOPpAEMpksksz7o0AoUfWc/FisWbHpUuC",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/004",
+    "name": "Eghomare Maryam",
+    "passwordHash": "$2a$12$CmrQ3EN/IVwgLd1VqZzQSegbKuwZXsZIW1NxX.LCYHVioeS5R6l32",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/005",
+    "name": "Ehijele Greater",
+    "passwordHash": "$2a$12$qRzZrbONi4YawF.kEXx12ukcKFQ4.haXxFLeQhZeZeT5To0BvbyaG",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/006",
+    "name": "Eromonsele Lucia Odion",
+    "passwordHash": "$2a$12$IK0PtDavtzP/laqUi/IQC.bkWC2hqcOrXnJGmxdYwbP/8OAwZhSIi",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/007",
+    "name": "Eromonsele Omoye Peace",
+    "passwordHash": "$2a$12$hAUF2ouwicac6WppzFDt2OJSsF86me4BxjzYepiFKd5AO70H3XOVS",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/008",
+    "name": "Kwaghdoo Success Terlumun",
+    "passwordHash": "$2a$12$15tnGoPdVEza84yOFdDLHuUQVUq0jq/gC7v7gK2UNrAbZXgGhgbR.",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/009",
+    "name": "Momoh Mirelle Oshioke",
+    "passwordHash": "$2a$12$TuVttQC2JxYN5/VeRq1H8.3STQURYC8l2bn4CX4Zrp8Yc4ewk/CZO",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/010",
+    "name": "Obiyan Cherish",
+    "passwordHash": "$2a$12$qYQ0ATjm2SgzpuDhfVF2DuZwesnKMrH9ELOVEBLMVGfzlOGfxdLPW",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/011",
+    "name": "Ojo Ayo-Oluwa Olalekan",
+    "passwordHash": "$2a$12$VyZUvqazDKxMnDuUwiUepOO1sZmOlmLZlRJUaZCBAyksLF06EkVSa",
+    "roles": [
+      "member",
+      "admin",
+      "super_admin"
+    ],
+    "mustChangePassword": true,
+    "xp": 20,
+    "streak": 0
+  },
+  {
+    "id": "TNV/012",
+    "name": "Okosun Wisdom Ose",
+    "passwordHash": "$2a$12$zL6BKMhVITFE0NIaK4Op/egAZmb0.rk0oIY1/CKjspjF1ZMP7zwoq",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/013",
+    "name": "Omoike Victory Obehi",
+    "passwordHash": "$2a$12$pTr/TfPCJggPj3XsJJHQKOt18O3WKalFS/9tCC2vp/aGadl0X9F3K",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/014",
+    "name": "Osadolor Blessing Esewi",
+    "passwordHash": "$2a$12$CyH4iqiFzPvu5c.gnW9m4eiT.tJdrMwMIc83uwPgSQyU1M.vkpjvS",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/015",
+    "name": "Oseghale Eseose",
+    "passwordHash": "$2a$12$4JQXixA6XDGo2uXJnXba5.Ebi96DBculuNcocP7Ct8p3EZ9atzTWu",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/016",
+    "name": "Ubaka Destiny",
+    "passwordHash": "$2a$12$NBAvPCFMmk7/LppFPGbaxuMfcTxa8kxLRMp/XzNGjx0xDALUn71gO",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/017",
+    "name": "Umoru Elizabeth",
+    "passwordHash": "$2a$12$fwVtMP1Gm3sBl03f2qfEAerMJZLjlCPbwB4q40mfF2RqXiBcNExzC",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/018",
+    "name": "Pam Claire Niri",
+    "passwordHash": "$2a$12$fCfXz.v1K5zqxIiYdU.6FuB5Rj4DYyHVGK9XRXRwyZ9KXPCN487NS",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  },
+  {
+    "id": "TNV/019",
+    "name": "Ograh Peculiar",
+    "passwordHash": "$2a$12$IedHRQTqUSR4SDj99S0.ueZgcpBhSEFYe4xn/JXODbQKZRMJxSkk.",
+    "roles": [
+      "member"
+    ],
+    "mustChangePassword": true,
+    "xp": 0,
+    "streak": 0
+  }
+]

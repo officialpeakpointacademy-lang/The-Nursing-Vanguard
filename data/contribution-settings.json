@@ -1,0 +1,15 @@
+{
+  "monthlyAmount": 500,
+  "currency": "NGN",
+  "frequency": "monthly",
+  "dueDay": 20,
+  "allowPartialPayments": false,
+  "paymentMethod": "bank_transfer",
+  "bankDetails": {
+    "bank": "PalmPay",
+    "accountNumber": "9120352282",
+    "accountName": "AYO-OLUWA OJO",
+    "proofSubmissionPhone": "09120352282"
+  },
+  "active": true
+}

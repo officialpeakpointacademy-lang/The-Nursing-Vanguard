@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>My Profile | The Nursing Vanguard</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-brand">
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a
+          href="/dashboard.html"
+          class="nav-item"
+        >
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          href="/learning.html"
+          class="nav-item"
+        >
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a
+          href="/leaderboard.html"
+          class="nav-item"
+        >
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+        <a
+          href="/profile.html"
+          class="nav-item active"
+        >
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>📚</span>
+          <span>Courses</span>
+        </a>
+
+      <a href="/library.html" class="nav-item">
+  <span>📚</span>
+  <span>Library</span>
+</a>
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <button
+          id="logoutBtn"
+          class="logout-btn"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+      class="mobile-overlay"
+      id="mobileOverlay"
+    ></div>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          ☰
+        </button>
+
+        <div class="topbar-title">
+          <h1>My Profile</h1>
+          <p>Your Vanguard identity</p>
+        </div>
+
+        <div class="topbar-user">
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            A
+          </div>
+
+          <div class="topbar-user-info">
+            <strong id="topUserName">
+              Vanguard Member
+            </strong>
+
+            <span id="topUserId">
+              TNV/000
+            </span>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- PROFILE CONTENT -->
+      <section class="page-content">
+
+        <!-- PROFILE HERO -->
+        <div class="profile-hero">
+
+          <div class="profile-large-avatar" id="largeAvatar">
+            A
+          </div>
+
+          <div class="profile-identity">
+
+            <span class="profile-label">
+              THE NURSING VANGUARD MEMBER
+            </span>
+
+            <h2 id="profileName">
+              Vanguard Member
+            </h2>
+
+            <p id="profileId">
+              TNV/000
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROFILE STATS -->
+        <div class="profile-stats-grid">
+
+          <div class="profile-stat-card">
+
+            <span class="profile-stat-icon">
+              🏆
+            </span>
+
+            <div>
+              <span class="profile-stat-label">
+                Community Rank
+              </span>
+
+              <strong id="rankValue">
+                #--
+              </strong>
+            </div>
+
+          </div>
+
+
+          <div class="profile-stat-card">
+
+            <span class="profile-stat-icon">
+              ⭐
+            </span>
+
+            <div>
+              <span class="profile-stat-label">
+                Total XP
+              </span>
+
+              <strong id="xpValue">
+                0 XP
+              </strong>
+            </div>
+
+          </div>
+
+
+          <div class="profile-stat-card">
+
+            <span class="profile-stat-icon">
+              🔥
+            </span>
+
+            <div>
+              <span class="profile-stat-label">
+                Current Streak
+              </span>
+
+              <strong id="streakValue">
+                0 days
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="profile-stat-card">
+
+            <span class="profile-stat-icon">
+              📝
+            </span>
+
+            <div>
+              <span class="profile-stat-label">
+                Learning Records
+              </span>
+
+              <strong id="recordsValue">
+                0
+              </strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RECENT LEARNING -->
+        <section class="profile-section">
+
+          <div class="section-heading">
+
+            <div>
+              <h2>Recent Learning</h2>
+              <p>
+                Your latest Daily Learning Records
+              </p>
+            </div>
+
+            <a
+              href="/learning.html"
+              class="secondary-btn"
+            >
+              View Learning Record
+            </a>
+
+          </div>
+
+
+          <div
+            class="profile-records"
+            id="profileRecords"
+          >
+
+            <div class="profile-empty-state">
+              Loading your learning records...
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- PROFILE FOOTER -->
+        <section class="profile-section profile-note">
+
+          <div>
+            <h3>Keep building your Vanguard identity.</h3>
+
+            <p>
+              Every learning record, challenge and
+              achievement contributes to your journey
+              within The Nursing Vanguard.
+            </p>
+          </div>
+
+          <a
+            href="/learning.html"
+            class="primary-btn"
+          >
+            Complete Today's Record →
+          </a>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="/js/profile.js"></script>
+
+</body>
+</html>

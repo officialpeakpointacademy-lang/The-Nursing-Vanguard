@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes | The Nursing Vanguard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="dashboard-page notes-page">
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-brand">
+        <img src="/assets/logo.jpg" alt="The Nursing Vanguard">
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a href="/member" class="nav-item">
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="/courses.html" class="nav-item">
+          <span>📚</span>
+          <span>My Courses</span>
+        </a>
+
+        <a href="/learning.html" class="nav-item">
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a href="/leaderboard.html" class="nav-item">
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <a href="/library.html" class="nav-item">
+          <span>📖</span>
+          <span>Library</span>
+        </a>
+
+        <a href="/notes.html" class="nav-item active">
+          <span>📝</span>
+          <span>My Notes</span>
+        </a>
+
+        <a href="/announcements.html" class="nav-item">
+          <span>📢</span>
+          <span>Announcements</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>💰</span>
+          <span>Contributions</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🏆</span>
+          <span>Challenges</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>👥</span>
+          <span>Community</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <button id="logoutBtn" class="logout-btn">
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+
+        <button class="menu-toggle" id="menuToggle">
+          ☰
+        </button>
+
+        <div class="topbar-title">
+          <span>Student Portal</span>
+        </div>
+
+        <div class="topbar-user">
+
+          <div class="notification">
+            🔔
+            <span class="notification-dot"></span>
+          </div>
+
+          <div class="user-avatar" id="userAvatar">U</div>
+
+          <div class="user-info">
+            <strong id="topUserName">Member</strong>
+            <small id="topUserId">TNV/000</small>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- NOTES PAGE -->
+      <section class="dashboard-content notes-page-content">
+
+        <section class="notes-workspace">
+
+          <!-- HEADING -->
+          <div class="notes-heading">
+            <div>
+              <span class="section-label">PERSONAL ACADEMIC WORKSPACE</span>
+              <h1>My Notes</h1>
+              <p>Your personal space to write, organise and save your academic knowledge.</p>
+            </div>
+
+            <span class="notes-private-label">🔒 Private Notes</span>
+          </div>
+
+          <!-- PERMANENT NOTE EDITOR -->
+          <div class="notes-editor-card">
+
+            <div class="notes-editor-header">
+              <div>
+                <h2>Notebook Editor</h2>
+                <p>Write your lecture notes, summaries and important explanations.</p>
+              </div>
+
+              <span id="noteEditorStatus">New Note</span>
+            </div>
+
+            <form id="noteForm">
+
+              <input type="hidden" id="noteId">
+
+              <div class="note-field">
+                <label for="noteTitle">Note Title</label>
+                <input
+                  type="text"
+                  id="noteTitle"
+                  placeholder="e.g. Anatomy of the Female Reproductive System"
+                  required
+                >
+              </div>
+
+              <div class="note-field">
+                <label for="noteCourse">Related Course</label>
+                <select id="noteCourse">
+                  <option value="">General / No specific course</option>
+                </select>
+              </div>
+
+              <div class="note-field">
+                <div class="note-content-heading">
+                  <label for="noteContent">Your Notes</label>
+                  <span>Start typing below</span>
+                </div>
+
+                <textarea
+                  id="noteContent"
+                  placeholder="Start writing your notes here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="notes-editor-footer">
+                <p id="noteFormMessage"></p>
+
+                <div class="notes-editor-actions">
+                  <button type="button" id="clearNoteBtn" class="secondary-btn">
+                    Clear
+                  </button>
+
+                  <button type="submit" id="saveNoteBtn" class="primary-btn">
+                    Save Note
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- SAVED NOTES -->
+          <div class="saved-notes-section">
+
+            <div class="saved-notes-heading">
+              <div>
+                <span class="section-label">YOUR COLLECTION</span>
+                <h2>My Saved Notes</h2>
+                <p>Access and manage your previously saved notes.</p>
+              </div>
+
+              <div class="notes-count">
+                <strong id="totalNotes">0</strong>
+                <span>Saved Notes</span>
+              </div>
+            </div>
+
+            <div class="notes-toolbar">
+
+              <input
+                type="search"
+                id="noteSearch"
+                placeholder="Search your notes..."
+              >
+
+              <select id="noteCourseFilter">
+                <option value="">All Courses</option>
+              </select>
+
+            </div>
+
+            <div id="notesContainer" class="notes-grid"></div>
+
+            <div id="notesEmptyState" class="notes-empty" hidden>
+              <h3>No saved notes yet</h3>
+              <p>Your saved notes will appear here after you create them.</p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <script src="/js/notes.js"></script>
+
+</body>
+</html>

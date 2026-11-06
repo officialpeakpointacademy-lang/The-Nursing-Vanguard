@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Learning Record | The Nursing Vanguard</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-brand">
+        <img src="/assets/logo.jpg" alt="The Nursing Vanguard">
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a href="/member" class="nav-item">
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="/courses.html" class="nav-item">
+  <span>📚</span>
+  <span>My Courses</span>
+</a>
+
+        <a href="/learning.html" class="nav-item active">
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a href="/leaderboard.html" class="nav-item">
+  <span>🏆</span>
+  <span>Leaderboard</span>
+</a>
+
+<a href="/profile.html" class="nav-item">
+  <span>👤</span>
+  <span>My Profile</span>
+</a>
+
+      <a href="/library.html" class="nav-item">
+  <span>📚</span>
+  <span>Library</span>
+</a>
+
+        <a href="#" class="nav-item">
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>📢</span>
+          <span>Announcements</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>💰</span>
+          <span>Contributions</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🏆</span>
+          <span>Challenges</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>👥</span>
+          <span>Community</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+       <a href="/profile.html" class="nav-item">
+  <span>👤</span>
+  <span>My Profile</span>
+</a>
+
+        <button id="logoutBtn" class="logout-btn">
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+
+        <button class="menu-toggle" id="menuToggle">
+          ☰
+        </button>
+
+        <div class="topbar-title">
+          <span>Daily Learning Record</span>
+        </div>
+
+        <div class="topbar-user">
+
+          <div class="notification">
+            🔔
+            <span class="notification-dot"></span>
+          </div>
+
+          <div class="user-avatar" id="userAvatar">
+            U
+          </div>
+
+          <div class="user-info">
+            <strong id="topUserName">Member</strong>
+            <small id="topUserId">TNV/000</small>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- CONTENT -->
+      <section class="dashboard-content learning-content">
+
+        <!-- PAGE INTRO -->
+        <div class="learning-intro">
+
+          <div>
+            <span class="section-label">YOUR LEARNING JOURNEY</span>
+
+            <h1>Daily Learning Record</h1>
+
+            <p>
+              Record what you learn each day and build a consistent
+              academic learning habit.
+            </p>
+          </div>
+
+          <div class="learning-intro-icon">
+            📝
+          </div>
+
+        </div>
+
+
+        <!-- RECORD FORM -->
+        <div class="learning-layout">
+
+          <section class="dashboard-card learning-form-card">
+
+            <div class="card-header">
+
+              <div>
+                <span class="section-label">NEW RECORD</span>
+                <h2>What did you learn today?</h2>
+              </div>
+
+            </div>
+
+
+            <form id="learningForm">
+
+              <div class="form-row">
+
+                <div class="form-group">
+
+                  <label for="learningDate">
+                    Date
+                  </label>
+
+                  <input
+                    type="date"
+                    id="learningDate"
+                    name="date"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="day">
+                    Day
+                  </label>
+
+                  <select id="day" name="day" required>
+
+                    <option value="">
+                      Select day
+                    </option>
+
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+
+                  </select>
+
+                </div>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="course">
+                  Course Title
+                </label>
+
+                <input
+                  type="text"
+                  id="course"
+                  name="course"
+                  placeholder="e.g. Anatomy"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="lecturer">
+                  Lecturer
+                </label>
+
+                <input
+                  type="text"
+                  id="lecturer"
+                  name="lecturer"
+                  placeholder="Enter lecturer's name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="learned">
+                  What did you learn?
+                </label>
+
+                <textarea
+                  id="learned"
+                  name="learned"
+                  rows="6"
+                  placeholder="Briefly describe what you learned today..."
+                  required
+                ></textarea>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="takeaway">
+                  Key Takeaway
+                  <span class="optional">
+                    Optional
+                  </span>
+                </label>
+
+                <textarea
+                  id="takeaway"
+                  name="takeaway"
+                  rows="3"
+                  placeholder="What is the most important thing you learned?"
+                ></textarea>
+
+              </div>
+
+
+              <div id="formMessage" class="form-message"></div>
+
+
+              <button
+                type="submit"
+                class="primary-btn"
+                id="submitRecord"
+              >
+                Save Learning Record →
+              </button>
+
+            </form>
+
+          </section>
+
+
+          <!-- SIDE INFORMATION -->
+          <aside>
+
+            <section class="dashboard-card learning-guide">
+
+              <span class="section-label">
+                HOW IT WORKS
+              </span>
+
+              <h2>Build Your Learning Streak</h2>
+
+              <div class="guide-item">
+                <span>1</span>
+                <div>
+                  <strong>Attend your classes</strong>
+                  <p>
+                    Pay attention to what your lecturer teaches.
+                  </p>
+                </div>
+              </div>
+
+              <div class="guide-item">
+                <span>2</span>
+                <div>
+                  <strong>Record what you learned</strong>
+                  <p>
+                    Complete your learning record after class.
+                  </p>
+                </div>
+              </div>
+
+              <div class="guide-item">
+                <span>3</span>
+                <div>
+                  <strong>Build your streak</strong>
+                  <p>
+                    Stay consistent from Monday to Friday.
+                  </p>
+                </div>
+              </div>
+
+              <div class="guide-item">
+                <span>4</span>
+                <div>
+                  <strong>Earn XP</strong>
+                  <p>
+                    Your consistency will contribute to your XP
+                    and community ranking.
+                  </p>
+                </div>
+              </div>
+
+            </section>
+
+
+            <section class="dashboard-card record-summary">
+
+              <span class="section-label">
+                THIS WEEK
+              </span>
+
+              <h2>Your Progress</h2>
+
+              <div class="week-progress">
+
+                <div>
+                  <span>Monday</span>
+                  <strong id="mondayStatus">—</strong>
+                </div>
+
+                <div>
+                  <span>Tuesday</span>
+                  <strong id="tuesdayStatus">—</strong>
+                </div>
+
+                <div>
+                  <span>Wednesday</span>
+                  <strong id="wednesdayStatus">—</strong>
+                </div>
+
+                <div>
+                  <span>Thursday</span>
+                  <strong id="thursdayStatus">—</strong>
+                </div>
+
+                <div>
+                  <span>Friday</span>
+                  <strong id="fridayStatus">—</strong>
+                </div>
+
+              </div>
+
+            </section>
+
+          </aside>
+
+        </div>
+
+
+        <!-- PREVIOUS RECORDS -->
+        <section class="dashboard-card previous-records">
+
+          <div class="card-header">
+
+            <div>
+              <span class="section-label">
+                YOUR HISTORY
+              </span>
+
+              <h2>Previous Learning Records</h2>
+            </div>
+
+          </div>
+
+          <div id="recordsList">
+
+            <div class="empty-records">
+              <div>📚</div>
+
+              <h3>No learning records yet</h3>
+
+              <p>
+                Your submitted learning records will appear here.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <div
+    class="mobile-overlay"
+    id="mobileOverlay"
+  ></div>
+
+
+  <script src="/js/learning.js"></script>
+
+</body>
+</html>

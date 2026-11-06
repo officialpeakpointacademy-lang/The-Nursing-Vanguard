@@ -1,0 +1,30 @@
+[
+  {
+    "id": "CH-1793820078688",
+    "title": "Daily Anatomy Challenge",
+    "description": "Study the major organs of the human body and write down five important facts you learned.",
+    "category": "academic",
+    "type": "daily",
+    "xpReward": 20,
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-04",
+    "status": "published",
+    "createdBy": "TNV/011",
+    "createdAt": "2026-11-04T19:21:18.689Z",
+    "updatedAt": "2026-11-04T19:28:13.038Z"
+  },
+  {
+    "id": "CH-1793821589823",
+    "title": "Physiology",
+    "description": "Foetal Circulation",
+    "category": "clinical",
+    "type": "daily",
+    "xpReward": 10,
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-05",
+    "status": "draft",
+    "createdBy": "TNV/011",
+    "createdAt": "2026-11-04T19:46:29.832Z",
+    "updatedAt": "2026-11-04T19:53:25.633Z"
+  }
+]

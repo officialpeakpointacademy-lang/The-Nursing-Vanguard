@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Courses | The Nursing Vanguard</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-brand">
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a
+          href="/dashboard.html"
+          class="nav-item"
+        >
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          href="/learning.html"
+          class="nav-item"
+        >
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a
+          href="/leaderboard.html"
+          class="nav-item"
+        >
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+        <a
+          href="/profile.html"
+          class="nav-item"
+        >
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+
+        <a
+          href="/courses.html"
+          class="nav-item active"
+        >
+          <span>📚</span>
+          <span>Courses</span>
+        </a>
+
+       <a href="/library.html" class="nav-item">
+  <span>📚</span>
+  <span>Library</span>
+</a>
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <button
+          id="logoutBtn"
+          class="logout-btn"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+      class="mobile-overlay"
+      id="mobileOverlay"
+    ></div>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          ☰
+        </button>
+
+        <div class="topbar-title">
+
+          <h1>Courses</h1>
+
+          <p>
+            Your nursing academic hub
+          </p>
+
+        </div>
+
+        <div class="topbar-user">
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            A
+          </div>
+
+          <div class="topbar-user-info">
+
+            <strong id="topUserName">
+              Vanguard Member
+            </strong>
+
+            <span id="topUserId">
+              TNV/000
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- PAGE CONTENT -->
+      <section class="page-content">
+
+        <!-- INTRO -->
+        <div class="courses-intro">
+
+          <div>
+
+            <span class="courses-label">
+              ACADEMIC HUB
+            </span>
+
+            <h2>
+              Your Courses
+            </h2>
+
+            <p>
+              Access your nursing subjects,
+              study resources and academic
+              materials from one place.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SEMESTER FILTER -->
+        <div class="courses-toolbar">
+
+          <div>
+
+           <h3>
+  200 Level — First Semester
+</h3>
+
+          <p>
+  Your current academic courses for the first semester.
+</p>
+
+          </div>
+
+          <select id="semesterSelect">
+
+            <option value="semester-1">
+              Semester 1
+            </option>
+
+            <option value="semester-2">
+              Semester 2
+            </option>
+
+          </select>
+
+        </div>
+
+
+<div
+  class="course-grid"
+  id="courseGrid"
+>
+</div>
+>
+
+  <!-- HUMAN ANATOMY III -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUS 211</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🫀</div>
+
+    <h3>Human Anatomy III</h3>
+
+    <p>
+      Advanced study of the structure,
+      organization and relationships of
+      the human body.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=human-anatomy-iii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- HUMAN PHYSIOLOGY III -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUS 212</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🧬</div>
+
+    <h3>Human Physiology III</h3>
+
+    <p>
+      Advanced study of normal body
+      functions and physiological processes.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=human-physiology-iii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- FOUNDATION OF NURSING III -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUR 211</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🩺</div>
+
+    <h3>Foundation of Nursing III</h3>
+
+    <p>
+      Principles, concepts and professional
+      foundations of nursing practice.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=foundation-of-nursing-iii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- PHARMACOLOGY II -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUS 213</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">💊</div>
+
+    <h3>Pharmacology II</h3>
+
+    <p>
+      Study of drugs, their actions, uses,
+      effects and safe administration.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=pharmacology-ii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- PRIMARY HEALTH CARE II -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUR 212</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🏥</div>
+
+    <h3>Primary Health Care II</h3>
+
+    <p>
+      Principles and practices of primary
+      health care and community health.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=primary-health-care-ii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- MEDICAL-SURGICAL NURSING I -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUR 213</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🏨</div>
+
+    <h3>Medical-Surgical Nursing I</h3>
+
+    <p>
+      Nursing care of patients with medical
+      and surgical conditions.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=medical-surgical-nursing-i"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- RESEARCH METHODOLOGY I -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUR 214</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🔬</div>
+
+    <h3>Research Methodology I</h3>
+
+    <p>
+      Introduction to research concepts,
+      methods and academic investigation.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=research-methodology-i"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- COMMUNICATION IN ENGLISH II -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">GNS 211</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">📖</div>
+
+    <h3>Communication in English II</h3>
+
+    <p>
+      Development of effective written,
+      spoken and professional communication.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=communication-in-english-ii"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- DIETETICS -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUS 214</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🥗</div>
+
+    <h3>Dietetics</h3>
+
+    <p>
+      Principles of nutrition, therapeutic
+      diets and nutritional care.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=dietetics"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- BIOSTATISTICS -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">NUS 215</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">📊</div>
+
+    <h3>Biostatistics</h3>
+
+    <p>
+      Statistical concepts and methods used
+      in health and nursing research.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=biostatistics"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- ORAL HEALTH CARE -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">COURSE</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🦷</div>
+
+    <h3>Oral Health Care</h3>
+
+    <p>
+      Principles of oral hygiene, oral health
+      promotion and basic oral care.
+    </p>
+
+    <div class="course-card-footer">
+      <span>📚 Study Course</span>
+
+      <a
+        href="/course.html?course=oral-health-care"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- PRACTICAL -->
+  <article class="course-card">
+
+    <div class="course-card-top">
+      <span class="course-code">PRACTICAL</span>
+      <span class="course-status">Active</span>
+    </div>
+
+    <div class="course-icon">🧤</div>
+
+    <h3>Practical</h3>
+
+    <p>
+      Practical nursing skills, clinical
+      procedures and hands-on learning.
+    </p>
+
+    <div class="course-card-footer">
+      <span>🩺 Practical</span>
+
+      <a
+        href="/course.html?course=practical"
+        class="course-btn"
+      >
+        Open →
+      </a>
+    </div>
+
+  </article>
+
+</div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="/js/courses.js"></script>
+
+</body>
+</html>

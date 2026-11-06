@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1793667257348",
+    "title": "Welcome to The Nursing Vanguard",
+    "category": "General",
+    "content": "Welcome to The Nursing Vanguard. This platform will serve as our central academic and community space for learning, collaboration and growth.",
+    "author": "Ojo Ayo-Oluwa Olalekan",
+    "authorId": "TNV/011",
+    "published": true,
+    "createdAt": "2026-11-03T00:54:17.353Z"
+  },
+  {
+    "id": "1793846220463",
+    "title": "Test",
+    "category": "Assessment",
+    "content": "New test",
+    "author": "Ojo Ayo-Oluwa Olalekan",
+    "authorId": "TNV/011",
+    "published": true,
+    "createdAt": "2026-11-05T02:37:00.466Z"
+  },
+  {
+    "id": "1793846225747",
+    "title": "Test",
+    "category": "Assessment",
+    "content": "New test",
+    "author": "Ojo Ayo-Oluwa Olalekan",
+    "authorId": "TNV/011",
+    "published": true,
+    "createdAt": "2026-11-05T02:37:05.747Z"
+  }
+]

@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Admin Dashboard | The Nursing Vanguard
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- =========================================
+     SIDEBAR
+========================================= -->
+
+<aside class="sidebar" id="adminSidebar">
+
+  <div class="sidebar-brand">
+
+    <img
+      src="/assets/logo.jpg"
+      alt="The Nursing Vanguard"
+    >
+
+  </div>
+
+
+  <nav class="sidebar-nav">
+
+    <a
+      href="/admin"
+      class="sidebar-link active"
+    >
+      <span>▣</span>
+      <span>Dashboard</span>
+    </a>
+
+<a
+  href="/member"
+  class="sidebar-link"
+>
+  <span>◉</span>
+  <span>Member Portal</span>
+</a>
+
+    <a
+      href="#members"
+      class="sidebar-link"
+    >
+      <span>♙</span>
+      <span>Members</span>
+    </a>
+
+<a
+  href="#contributions"
+  class="sidebar-link"
+>
+  <span>₦</span>
+  <span>Contributions</span>
+</a>
+
+  <a
+  href="/announcements.html"
+  class="sidebar-link"
+>
+  <span>◈</span>
+  <span>Announcements</span>
+</a>
+
+<a
+  href="/community.html"
+  class="sidebar-link"
+>
+  <span>◎</span>
+  <span>Community</span>
+</a>
+
+    <a
+      href="#courses"
+      class="sidebar-link"
+    >
+      <span>▤</span>
+      <span>Courses</span>
+    </a>
+
+
+    <a
+      href="#learning"
+      class="sidebar-link"
+    >
+      <span>✎</span>
+      <span>Learning Records</span>
+    </a>
+
+    <a
+  href="#challenges"
+  class="sidebar-link"
+>
+  <span>🏆</span>
+  <span>Challenges</span>
+</a>
+
+  </nav>
+
+
+  <div class="sidebar-bottom">
+
+    <button
+      id="logoutBtn"
+      class="sidebar-link sidebar-logout"
+      type="button"
+    >
+      <span>↪</span>
+      <span>Logout</span>
+    </button>
+
+  </div>
+
+</aside>
+
+<div
+  class="admin-sidebar-overlay"
+  id="adminSidebarOverlay"
+></div>
+
+<div
+  class="mobile-overlay"
+  id="adminMobileOverlay"
+></div>
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+<main class="main-content">
+
+
+<header class="topbar">
+
+  <div style="display:flex; align-items:center; gap:12px;">
+
+    <button
+      type="button"
+      class="admin-menu-toggle"
+      id="adminMenuToggle"
+      aria-label="Open navigation"
+      aria-controls="adminSidebar"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <div>
+      <span class="eyebrow">
+        ADMINISTRATION
+      </span>
+
+      <h1>
+        Admin Dashboard
+      </h1>
+    </div>
+
+  </div>
+
+  <div class="topbar-user">
+
+    <div id="adminAvatar" class="avatar">
+      A
+    </div>
+
+    <div>
+      <strong id="adminName">
+        Administrator
+      </strong>
+
+      <span>
+        Super Admin
+      </span>
+    </div>
+
+  </div>
+
+</header>
+
+
+  <!-- TOPBAR -->
+
+  <div>
+    <span class="eyebrow">
+      ADMINISTRATION
+    </span>
+
+    <h1>
+      Admin Dashboard
+    </h1>
+  </div>
+
+</div>
+
+    <div class="topbar-user">
+
+      <div
+        id="adminAvatar"
+        class="avatar"
+      >
+        A
+      </div>
+
+      <div>
+
+        <strong id="adminName">
+          Administrator
+        </strong>
+
+        <span>
+          Super Admin
+        </span>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================================
+       DASHBOARD INTRO
+  ========================================= -->
+
+  <section class="admin-intro">
+
+    <div>
+
+      <span class="eyebrow">
+        THE NURSING VANGUARD
+      </span>
+
+      <h2>
+        Community overview
+      </h2>
+
+      <p class="muted">
+        Manage members, academic activities,
+        learning records and announcements
+        from one place.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       STATISTICS
+  ========================================= -->
+
+  <section class="admin-stats">
+
+
+    <article class="admin-stat-card">
+
+      <span class="admin-stat-label">
+        Total Members
+      </span>
+
+      <strong
+        id="totalMembers"
+        class="admin-stat-value"
+      >
+        —
+      </strong>
+
+      <span class="admin-stat-note">
+        Registered Vanguard members
+      </span>
+
+    </article>
+
+
+
+    <article class="admin-stat-card">
+
+      <span class="admin-stat-label">
+        Active Today
+      </span>
+
+      <strong
+        id="activeToday"
+        class="admin-stat-value"
+      >
+        —
+      </strong>
+
+      <span class="admin-stat-note">
+        Members active today
+      </span>
+
+    </article>
+
+
+
+    <article class="admin-stat-card">
+
+      <span class="admin-stat-label">
+        Learning Records
+      </span>
+
+      <strong
+        id="learningRecords"
+        class="admin-stat-value"
+      >
+        —
+      </strong>
+
+      <span class="admin-stat-note">
+        Community learning entries
+      </span>
+
+    </article>
+
+
+
+    <article class="admin-stat-card">
+
+      <span class="admin-stat-label">
+        Announcements
+      </span>
+
+      <strong
+        id="announcementCount"
+        class="admin-stat-value"
+      >
+        —
+      </strong>
+
+      <span class="admin-stat-note">
+        Published announcements
+      </span>
+
+    </article>
+
+
+  </section>
+
+
+
+  <!-- =========================================
+       QUICK ACTIONS
+  ========================================= -->
+
+  <section class="admin-section">
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="eyebrow">
+          QUICK ACTIONS
+        </span>
+
+        <h2>
+          Manage Vanguard
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="admin-action-grid">
+
+
+      <a
+        href="#members"
+        class="admin-action-card"
+      >
+
+        <div class="admin-action-icon">
+          ♙
+        </div>
+
+        <div>
+
+          <h3>
+            Manage Members
+          </h3>
+
+          <p>
+            View registered members
+            and account information.
+          </p>
+
+        </div>
+
+      </a>
+
+
+
+      <a
+        href="#announcements"
+        class="admin-action-card"
+      >
+
+        <div class="admin-action-icon">
+          ◈
+        </div>
+
+        <div>
+
+          <h3>
+            Announcements
+          </h3>
+
+          <p>
+            Publish important academic
+            and community updates.
+          </p>
+
+        </div>
+
+      </a>
+
+<a
+  href="/community.html"
+  class="admin-action-card"
+>
+
+  <div class="admin-action-icon">
+    ◎
+  </div>
+
+  <div>
+
+    <h3>
+      Community Discussions
+    </h3>
+
+    <p>
+      View discussions, manage posts
+      and moderate member comments.
+    </p>
+
+  </div>
+
+</a>
+
+      <a
+        href="#courses"
+        class="admin-action-card"
+      >
+
+        <div class="admin-action-icon">
+          ▤
+        </div>
+
+        <div>
+
+          <h3>
+            Courses
+          </h3>
+
+          <p>
+            Manage the academic course
+            structure and content.
+          </p>
+
+        </div>
+
+      </a>
+
+
+
+      <a
+        href="#learning"
+        class="admin-action-card"
+      >
+
+        <div class="admin-action-icon">
+          ✎
+        </div>
+
+        <div>
+
+          <h3>
+            Learning Records
+          </h3>
+
+          <p>
+            Monitor community learning
+            activity and participation.
+          </p>
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       MEMBERS
+  ========================================= -->
+
+  <section
+    id="members"
+    class="admin-section"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="eyebrow">
+          MEMBERS
+        </span>
+
+        <h2>
+          Member Management
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div
+      id="membersContainer"
+      class="admin-panel"
+    >
+
+      <div class="admin-loading">
+        Loading members...
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- =========================================
+     CONTRIBUTIONS
+========================================= -->
+
+<section
+  id="contributions"
+  class="admin-section"
+>
+
+  <div class="section-heading">
+
+    <div>
+      <span class="eyebrow">
+        FINANCIAL MANAGEMENT
+      </span>
+
+      <h2>
+        Contributions Management
+      </h2>
+
+      <p class="muted">
+        Track monthly contributions, verify payments
+        and monitor outstanding obligations.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="admin-panel">
+
+    <!-- PERIOD TOOLBAR -->
+
+    <div class="admin-learning-toolbar">
+
+      <div class="admin-form-group">
+
+        <label for="contributionPeriod">
+          Contribution Month
+        </label>
+
+        <input
+          type="month"
+          id="contributionPeriod"
+          value="2026-11"
+        >
+
+      </div>
+
+      <div class="admin-form-group">
+
+        <label>
+          Actions
+        </label>
+
+        <button
+          type="button"
+          id="generateContributionsBtn"
+          class="btn btn-primary"
+        >
+          Generate Monthly Records
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- SUMMARY CARDS -->
+
+    <div class="admin-course-summary">
+
+      <div>
+        <strong id="contributionExpected">₦0</strong>
+        <span>Expected Contributions</span>
+      </div>
+
+      <div>
+        <strong id="contributionCollected">₦0</strong>
+        <span>Amount Collected</span>
+      </div>
+
+      <div>
+        <strong id="contributionOutstanding">₦0</strong>
+        <span>Outstanding</span>
+      </div>
+
+      <div>
+        <strong id="contributionPaidCount">0</strong>
+        <span>Members Paid</span>
+      </div>
+
+    </div>
+
+
+    <!-- STATUS MESSAGE -->
+
+    <div
+      id="contributionMessage"
+      class="admin-form-message"
+      aria-live="polite"
+    ></div>
+
+
+    <!-- SEARCH AND FILTER -->
+
+    <div class="admin-learning-toolbar">
+
+      <div class="admin-form-group">
+
+        <label for="contributionSearch">
+          Search Members
+        </label>
+
+        <input
+          type="search"
+          id="contributionSearch"
+          placeholder="Search name or Vanguard ID..."
+        >
+
+      </div>
+
+      <div class="admin-form-group">
+
+        <label for="contributionStatusFilter">
+          Payment Status
+        </label>
+
+        <select id="contributionStatusFilter">
+
+          <option value="">
+            All Statuses
+          </option>
+
+          <option value="paid">
+            Paid
+          </option>
+
+          <option value="pending">
+            Pending
+          </option>
+
+          <option value="overdue">
+            Overdue
+          </option>
+
+          <option value="waived">
+            Waived
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTRIBUTION REGISTER -->
+
+    <div class="admin-course-list-header">
+
+      <div>
+        <h3>
+          Monthly Contribution Register
+        </h3>
+
+        <p>
+          Review each member's payment status
+          and record verified transactions.
+        </p>
+      </div>
+
+      <span id="contributionResultCount">
+        0 members
+      </span>
+
+    </div>
+
+
+    <div
+      id="contributionsContainer"
+      class="admin-courses-container"
+    >
+
+      <div class="admin-loading">
+        Loading contribution records...
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =========================================
+       ANNOUNCEMENTS
+  ========================================= -->
+
+  <section
+    id="announcements"
+    class="admin-section"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="eyebrow">
+          COMMUNICATION
+        </span>
+
+        <h2>
+          Announcements
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="admin-panel">
+
+  <!-- NEW ANNOUNCEMENT FORM -->
+
+  <form id="announcementForm" class="admin-announcement-form">
+
+    <div class="admin-form-row">
+
+      <div class="admin-form-group">
+
+        <label for="announcementTitle">
+          Announcement Title
+        </label>
+
+        <input
+          type="text"
+          id="announcementTitle"
+          name="title"
+          placeholder="Enter announcement title"
+          required
+        >
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="announcementCategory">
+          Category
+        </label>
+
+        <select
+          id="announcementCategory"
+          name="category"
+          required
+        >
+
+          <option value="">
+            Select category
+          </option>
+
+          <option value="General">
+            General
+          </option>
+
+          <option value="Academic">
+            Academic
+          </option>
+
+          <option value="Assessment">
+            Assessment
+          </option>
+
+          <option value="Event">
+            Event
+          </option>
+
+          <option value="Important">
+            Important
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <div class="admin-form-group">
+
+      <label for="announcementContent">
+        Announcement
+      </label>
+
+      <textarea
+        id="announcementContent"
+        name="content"
+        placeholder="Write your announcement here..."
+        required
+      ></textarea>
+
+    </div>
+
+
+    <div class="admin-announcement-actions">
+
+      <button
+  type="submit"
+  class="btn btn-primary"
+  id="publishAnnouncementBtn"
+>
+  <span>↗</span>
+  <span>Publish Announcement</span>
+</button>
+
+    </div>
+
+
+    <div
+      id="announcementFormMessage"
+      class="admin-form-message"
+    ></div>
+
+  </form>
+
+
+  <!-- EXISTING ANNOUNCEMENTS -->
+
+  <div class="admin-announcement-list">
+
+    <div class="admin-announcement-list-header">
+
+      <div>
+
+        <h3>
+          Published Announcements
+        </h3>
+
+        <p>
+          Manage announcements currently visible
+          to Vanguard members.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div
+      id="adminAnnouncementsContainer"
+      class="admin-announcements-container"
+    >
+
+      <div class="admin-loading">
+        Loading announcements...
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       COURSES
+  ========================================= -->
+
+  <section
+  id="courses"
+  class="admin-section"
+>
+
+  <div class="section-heading">
+
+    <div>
+      <span class="eyebrow">
+        ACADEMICS
+      </span>
+
+      <h2>
+        Course Management
+      </h2>
+    </div>
+
+    <button
+      type="button"
+      id="addCourseBtn"
+      class="btn btn-primary"
+    >
+      + Add New Course
+    </button>
+
+  </div>
+
+
+  <div class="admin-panel">
+
+    <!-- COURSE STATISTICS -->
+
+    <div class="admin-course-summary">
+
+      <div>
+        <strong id="adminCourseCount">0</strong>
+        <span>Total Courses</span>
+      </div>
+
+      <div>
+        <strong id="adminActiveCourseCount">0</strong>
+        <span>Active Courses</span>
+      </div>
+
+      <div>
+        <strong id="adminInactiveCourseCount">0</strong>
+        <span>Inactive Courses</span>
+      </div>
+
+    </div>
+
+
+    <!-- COURSE SEARCH AND FILTERS -->
+
+    <div class="admin-course-toolbar">
+
+      <div class="admin-form-group">
+
+        <label for="courseSearch">
+          Search Courses
+        </label>
+
+        <input
+          type="search"
+          id="courseSearch"
+          placeholder="Search by course title or code..."
+        >
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="adminSemesterFilter">
+          Semester
+        </label>
+
+        <select id="adminSemesterFilter">
+
+          <option value="">
+            All Semesters
+          </option>
+
+          <option value="semester-1">
+            Semester 1
+          </option>
+
+          <option value="semester-2">
+            Semester 2
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="adminCourseStatusFilter">
+          Status
+        </label>
+
+        <select id="adminCourseStatusFilter">
+
+          <option value="">
+            All Statuses
+          </option>
+
+          <option value="active">
+            Active
+          </option>
+
+          <option value="inactive">
+            Inactive
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- COURSE FORM MESSAGE -->
+
+    <div
+      id="adminCourseMessage"
+      class="admin-form-message"
+    ></div>
+
+
+    <!-- ADD / EDIT COURSE FORM -->
+
+    <form
+      id="adminCourseForm"
+      class="admin-course-form"
+      hidden
+    >
+
+      <div class="admin-course-form-header">
+
+        <div>
+          <h3 id="courseFormHeading">
+            Add New Course
+          </h3>
+
+          <p>
+            Enter the course information below.
+          </p>
+        </div>
+
+      </div>
+
+
+      <input
+        type="hidden"
+        id="courseOriginalId"
+      >
+
+
+      <div class="admin-course-form-grid">
+
+        <div class="admin-form-group">
+
+          <label for="courseId">
+            Course ID *
+          </label>
+
+          <input
+            type="text"
+            id="courseId"
+            placeholder="e.g. human-anatomy-v"
+            required
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="courseTitle">
+            Course Title *
+          </label>
+
+          <input
+            type="text"
+            id="courseTitle"
+            placeholder="Enter course title"
+            required
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="courseCode">
+            Course Code
+          </label>
+
+          <input
+            type="text"
+            id="courseCode"
+            placeholder="e.g. NUS 231"
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="courseIcon">
+            Course Icon
+          </label>
+
+          <input
+            type="text"
+            id="courseIcon"
+            placeholder="e.g. 🫀"
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="courseSemester">
+            Semester *
+          </label>
+
+          <select
+            id="courseSemester"
+            required
+          >
+
+            <option value="">
+              Select semester
+            </option>
+
+            <option value="semester-1">
+              Semester 1
+            </option>
+
+            <option value="semester-2">
+              Semester 2
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="courseStatus">
+            Course Status
+          </label>
+
+          <select id="courseStatus">
+
+            <option value="active">
+              Active
+            </option>
+
+            <option value="inactive">
+              Inactive
+            </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="courseDescription">
+          Course Description
+        </label>
+
+        <textarea
+          id="courseDescription"
+          rows="3"
+          placeholder="Briefly describe this course..."
+        ></textarea>
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="courseTopics">
+          Course Topics
+        </label>
+
+        <textarea
+          id="courseTopics"
+          rows="6"
+          placeholder="Enter one topic per line..."
+        ></textarea>
+
+        <small>
+          Enter each topic on a separate line.
+        </small>
+
+      </div>
+
+
+      <div class="admin-course-form-actions">
+
+        <button
+          type="submit"
+          id="saveCourseBtn"
+          class="btn btn-primary"
+        >
+          Save Course
+        </button>
+
+        <button
+          type="button"
+          id="cancelCourseBtn"
+          class="btn btn-secondary"
+        >
+          Cancel
+        </button>
+
+      </div>
+
+    </form>
+
+
+    <!-- COURSE LIST -->
+
+    <div class="admin-course-list-header">
+
+      <div>
+        <h3>All Courses</h3>
+
+        <p>
+          View and manage the academic courses
+          available to Vanguard members.
+        </p>
+      </div>
+
+      <span id="adminCourseResultCount">
+        0 courses
+      </span>
+
+    </div>
+
+
+    <div
+      id="adminCoursesContainer"
+      class="admin-courses-container"
+    >
+
+      <div class="admin-loading">
+        Loading courses...
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     CHALLENGES MANAGEMENT
+========================================= -->
+
+<section
+  id="challenges"
+  class="admin-section"
+>
+
+  <div class="section-heading">
+
+    <div>
+      <span class="eyebrow">
+        COMMUNITY ENGAGEMENT
+      </span>
+
+      <h2>
+        Challenges Management
+      </h2>
+
+      <p class="muted">
+        Create challenges, motivate members
+        and monitor participation.
+      </p>
+    </div>
+
+    <button
+      type="button"
+      id="addChallengeBtn"
+      class="btn btn-primary"
+    >
+      + Create Challenge
+    </button>
+
+  </div>
+
+
+  <div class="admin-panel">
+
+    <!-- CHALLENGE STATISTICS -->
+
+    <div class="admin-course-summary">
+
+      <div>
+        <strong id="adminChallengeCount">0</strong>
+        <span>Total Challenges</span>
+      </div>
+
+      <div>
+        <strong id="adminPublishedChallengeCount">0</strong>
+        <span>Published</span>
+      </div>
+
+      <div>
+        <strong id="adminDraftChallengeCount">0</strong>
+        <span>Drafts</span>
+      </div>
+
+      <div>
+        <strong id="adminCompletedChallengeCount">0</strong>
+        <span>Completions</span>
+      </div>
+
+    </div>
+
+
+    <!-- CHALLENGE MESSAGE -->
+
+    <div
+      id="adminChallengeMessage"
+      class="admin-form-message"
+      aria-live="polite"
+    ></div>
+
+
+    <!-- CHALLENGE FORM -->
+
+    <form
+      id="adminChallengeForm"
+      class="admin-course-form"
+      hidden
+    >
+
+      <div class="admin-course-form-header">
+
+        <div>
+          <h3 id="challengeFormHeading">
+            Create New Challenge
+          </h3>
+
+          <p>
+            Set the challenge details and XP reward.
+          </p>
+        </div>
+
+      </div>
+
+
+      <input
+        type="hidden"
+        id="challengeOriginalId"
+      >
+
+
+      <div class="admin-course-form-grid">
+
+        <div class="admin-form-group">
+
+          <label for="challengeTitle">
+            Challenge Title *
+          </label>
+
+          <input
+            type="text"
+            id="challengeTitle"
+            placeholder="e.g. Daily Anatomy Challenge"
+            required
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="challengeCategory">
+            Category *
+          </label>
+
+          <select
+            id="challengeCategory"
+            required
+          >
+
+            <option value="">
+              Select category
+            </option>
+
+            <option value="academic">
+              Academic
+            </option>
+
+            <option value="clinical">
+              Clinical Knowledge
+            </option>
+
+            <option value="consistency">
+              Consistency
+            </option>
+
+            <option value="community">
+              Community
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="challengeType">
+            Challenge Frequency *
+          </label>
+
+          <select
+            id="challengeType"
+            required
+          >
+
+            <option value="">
+              Select frequency
+            </option>
+
+            <option value="daily">
+              Daily
+            </option>
+
+            <option value="weekly">
+              Weekly
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="challengeXP">
+            XP Reward *
+          </label>
+
+          <input
+            type="number"
+            id="challengeXP"
+            min="1"
+            step="1"
+            placeholder="e.g. 20"
+            required
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="challengeStartDate">
+            Start Date *
+          </label>
+
+          <input
+            type="date"
+            id="challengeStartDate"
+            required
+          >
+
+        </div>
+
+
+        <div class="admin-form-group">
+
+          <label for="challengeEndDate">
+            End Date *
+          </label>
+
+          <input
+            type="date"
+            id="challengeEndDate"
+            required
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="challengeDescription">
+          Challenge Description *
+        </label>
+
+        <textarea
+          id="challengeDescription"
+          rows="5"
+          placeholder="Explain what members need to do to complete this challenge..."
+          required
+        ></textarea>
+
+      </div>
+
+
+      <div class="admin-course-form-actions">
+
+        <button
+          type="submit"
+          id="saveChallengeBtn"
+          class="btn btn-primary"
+        >
+          Save Challenge
+        </button>
+
+        <button
+          type="button"
+          id="cancelChallengeBtn"
+          class="btn btn-secondary"
+        >
+          Cancel
+        </button>
+
+      </div>
+
+    </form>
+
+
+    <!-- SEARCH AND FILTERS -->
+
+    <div class="admin-course-toolbar">
+
+      <div class="admin-form-group">
+
+        <label for="challengeSearch">
+          Search Challenges
+        </label>
+
+        <input
+          type="search"
+          id="challengeSearch"
+          placeholder="Search challenge title..."
+        >
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="challengeStatusFilter">
+          Status
+        </label>
+
+        <select id="challengeStatusFilter">
+
+          <option value="">
+            All Statuses
+          </option>
+
+          <option value="published">
+            Published
+          </option>
+
+          <option value="draft">
+            Draft
+          </option>
+
+          <option value="inactive">
+            Inactive
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="admin-form-group">
+
+        <label for="challengeCategoryFilter">
+          Category
+        </label>
+
+        <select id="challengeCategoryFilter">
+
+          <option value="">
+            All Categories
+          </option>
+
+          <option value="academic">
+            Academic
+          </option>
+
+          <option value="clinical">
+            Clinical Knowledge
+          </option>
+
+          <option value="consistency">
+            Consistency
+          </option>
+
+          <option value="community">
+            Community
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- CHALLENGE REGISTER -->
+
+    <div class="admin-course-list-header">
+
+      <div>
+        <h3>
+          All Challenges
+        </h3>
+
+        <p>
+          Manage challenge availability and
+          monitor member participation.
+        </p>
+      </div>
+
+      <span id="adminChallengeResultCount">
+        0 challenges
+      </span>
+
+    </div>
+
+
+    <div
+      id="adminChallengesContainer"
+      class="admin-courses-container"
+    >
+
+      <div class="admin-loading">
+        Loading challenges...
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =========================================
+       LEARNING RECORDS
+  ========================================= -->
+
+  <section
+    id="learning"
+    class="admin-section"
+  >
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="eyebrow">
+          ACADEMIC ACTIVITY
+        </span>
+
+        <h2>
+          Learning Records
+        </h2>
+
+      </div>
+
+    </div>
+
+
+   <div class="admin-panel">
+
+  <div class="admin-learning-toolbar">
+
+    <div class="admin-learning-search">
+
+      <label for="learningSearch">
+        Search
+      </label>
+
+      <input
+        type="search"
+        id="learningSearch"
+        placeholder="Search member or course..."
+      >
+
+    </div>
+
+
+    <div class="admin-learning-filter">
+
+      <label for="learningCourseFilter">
+        Course
+      </label>
+
+      <select id="learningCourseFilter">
+
+        <option value="">
+          All Courses
+        </option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div class="admin-learning-summary">
+
+    <strong id="adminLearningCount">
+      0
+    </strong>
+
+    <span>
+      learning records
+    </span>
+
+  </div>
+
+
+  <div
+    id="adminLearningContainer"
+    class="admin-learning-container"
+  >
+
+    <div class="admin-loading">
+      Loading learning records...
+    </div>
+
+  </div>
+
+  </section>
+
+
+</main>
+
+
+<!-- PAYMENT VERIFICATION MODAL -->
+<div id="paymentModal" class="payment-modal" aria-hidden="true">
+
+  <div class="payment-modal-backdrop" data-close-payment-modal></div>
+
+  <div class="payment-modal-content" role="dialog" aria-modal="true" aria-labelledby="paymentModalTitle">
+
+    <div class="payment-modal-header">
+      <div>
+        <span class="eyebrow">CONTRIBUTION MANAGEMENT</span>
+        <h2 id="paymentModalTitle">Verify Payment</h2>
+        <p>Record and confirm a member's contribution.</p>
+      </div>
+
+      <button
+        type="button"
+        class="payment-modal-close"
+        id="closePaymentModal"
+        aria-label="Close modal"
+      >&times;</button>
+    </div>
+
+    <div class="payment-member-summary">
+      <div class="payment-member-avatar" id="paymentMemberAvatar">M</div>
+
+      <div>
+        <h3 id="paymentMemberName">Member Name</h3>
+        <p id="paymentMemberId">TNV/000</p>
+      </div>
+    </div>
+
+    <div class="payment-period-summary">
+      <div>
+        <span>Contribution period</span>
+        <strong id="paymentMemberPeriod">November 2026</strong>
+      </div>
+
+      <div>
+        <span>Amount due</span>
+        <strong id="paymentAmountDue">₦500</strong>
+      </div>
+    </div>
+
+    <form id="paymentVerificationForm">
+
+      <div class="form-group">
+        <label for="paymentDate">Payment date</label>
+        <input
+          type="date"
+          id="paymentDate"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="paymentReference">Transaction reference</label>
+        <input
+          type="text"
+          id="paymentReference"
+          placeholder="Enter transaction reference"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="paymentRemarks">Remarks (optional)</label>
+        <textarea
+          id="paymentRemarks"
+          rows="3"
+          placeholder="Additional payment details..."
+        ></textarea>
+      </div>
+
+      <div class="payment-modal-notice">
+        <span>ⓘ</span>
+        <p>Confirm that the payment has been received before recording it.</p>
+      </div>
+
+      <div class="payment-modal-actions">
+        <button
+          type="button"
+          class="btn-secondary"
+          id="cancelPaymentModal"
+        >
+          Cancel
+        </button>
+
+        <button
+          type="submit"
+          class="btn-primary"
+          id="confirmPaymentBtn"
+        >
+          Confirm Payment
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+
+<script src="/js/admin.js"></script>
+
+</body>
+
+</html>

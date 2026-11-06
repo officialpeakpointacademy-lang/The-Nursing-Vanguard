@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Member Login | The Nursing Vanguard</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="auth-page">
+
+  <main class="auth-shell">
+
+    <!-- BRAND SECTION -->
+    <section class="auth-brand">
+
+      <div class="auth-brand-logo">
+        <img src="/assets/logo.jpg" alt="The Nursing Vanguard">
+      </div>
+
+      <span class="auth-brand-label">THE NURSING VANGUARD</span>
+
+      <h1>
+        Your journey.<br>
+        Your growth.<br>
+        <span>Your Vanguard.</span>
+      </h1>
+
+      <p>
+        A community built to support your learning,
+        strengthen your skills and help you grow
+        into an excellent nursing professional.
+      </p>
+
+      <div class="auth-brand-footer">
+        <span>LEARN</span>
+        <span>•</span>
+        <span>GROW</span>
+        <span>•</span>
+        <span>LEAD</span>
+      </div>
+
+    </section>
+
+
+    <!-- LOGIN SECTION -->
+    <section class="auth-card">
+
+      <div class="auth-card-heading">
+
+        <span class="eyebrow">MEMBER PORTAL</span>
+
+        <h2>Welcome back.</h2>
+
+        <p class="muted">
+          Sign in to continue your Vanguard experience.
+        </p>
+
+      </div>
+
+
+      <form id="loginForm">
+
+        <div class="auth-form-group">
+
+          <label for="id">Vanguard ID</label>
+
+          <input
+            id="id"
+            type="text"
+            placeholder="e.g. TNV/011"
+            autocomplete="username"
+            required
+          >
+
+        </div>
+
+
+        <div class="auth-form-group">
+
+          <label for="password">Password</label>
+
+          <div class="password-wrapper">
+
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            >
+
+            <button
+              type="button"
+              id="togglePassword"
+              class="password-toggle"
+              aria-label="Show password"
+            >
+              Show
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div
+          id="loginMessage"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-full"
+          id="loginSubmitBtn"
+        >
+          Sign In to Your Account →
+        </button>
+
+      </form>
+
+
+      <div class="auth-card-footer">
+
+        <a href="/" class="back-link">
+          ← Back to homepage
+        </a>
+
+        <p>
+          Secure access for registered Vanguard members.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="/js/login.js"></script>
+
+</body>
+</html>

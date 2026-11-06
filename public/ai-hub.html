@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Hub | The Nursing Vanguard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="dashboard-page ai-hub-page">
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+     <div class="sidebar-brand">
+  <img src="/assets/logo.jpg" alt="The Nursing Vanguard">
+
+  <button
+    type="button"
+    class="sidebar-collapse-btn"
+    id="sidebarCollapseBtn"
+    aria-label="Collapse sidebar"
+    title="Collapse sidebar"
+  >
+    ‹
+  </button>
+</div>
+
+      <nav class="sidebar-nav">
+
+        <a href="/member" class="nav-item">
+          <span>🏠</span><span>Dashboard</span>
+        </a>
+
+        <a href="/courses.html" class="nav-item">
+          <span>📚</span><span>My Courses</span>
+        </a>
+
+        <a href="/learning.html" class="nav-item">
+          <span>📝</span><span>Learning Record</span>
+        </a>
+
+        <a href="/leaderboard.html" class="nav-item">
+          <span>🏆</span><span>Leaderboard</span>
+        </a>
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span><span>My Profile</span>
+        </a>
+
+        <a href="/library.html" class="nav-item">
+          <span>📖</span><span>Library</span>
+        </a>
+
+        <a href="/notes.html" class="nav-item">
+          <span>📝</span><span>My Notes</span>
+        </a>
+
+        <a href="/announcements.html" class="nav-item">
+          <span>📢</span><span>Announcements</span>
+        </a>
+
+        <a href="/ai-hub.html" class="nav-item active">
+          <span>🤖</span><span>AI Hub</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>💰</span><span>Contributions</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>🏆</span><span>Challenges</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>👥</span><span>Community</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <a href="/profile.html" class="nav-item">
+          <span>👤</span><span>My Profile</span>
+        </a>
+
+        <button id="logoutBtn" class="logout-btn">
+          <span>🚪</span><span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="topbar-title">
+          <span>Student Portal</span>
+        </div>
+
+        <div class="topbar-user">
+
+          <div class="notification">
+            🔔
+            <span class="notification-dot"></span>
+          </div>
+
+          <div class="user-avatar" id="userAvatar">U</div>
+
+          <div class="user-info">
+            <strong id="topUserName">Member</strong>
+            <small id="topUserId">TNV/000</small>
+          </div>
+
+        </div>
+
+      </header>
+
+      <!-- AI HUB CONTENT -->
+      <section class="dashboard-content ai-hub-content">
+
+        <!-- HERO -->
+        <section class="ai-hero">
+
+          <div class="ai-hero-text">
+            <span class="section-label">THE NURSING VANGUARD</span>
+
+            <h1>Your Academic AI Hub</h1>
+
+            <p>
+              Discover intelligent tools that support your learning,
+              research, writing and academic development.
+            </p>
+
+            <span class="ai-hero-tag">Learn smarter. Think deeper. Grow further.</span>
+          </div>
+
+          <div class="ai-hero-icon">🤖</div>
+
+        </section>
+
+        <!-- SEARCH -->
+        <section class="ai-tools-section">
+
+          <div class="section-heading">
+            <div>
+              <span class="section-label">AI DIRECTORY</span>
+              <h2>Explore AI Tools</h2>
+            </div>
+            <span>Choose the right tool for your task.</span>
+          </div>
+
+          <div class="ai-toolbar">
+
+            <input
+              type="search"
+              id="aiSearch"
+              placeholder="Search AI tools..."
+            >
+
+            <select id="aiCategoryFilter">
+              <option value="all">All Categories</option>
+              <option value="learning">Learning</option>
+              <option value="research">Research</option>
+              <option value="writing">Writing</option>
+              <option value="reasoning">Problem-solving</option>
+              <option value="assistant">AI Assistants</option>
+            </select>
+
+          </div>
+
+          <!-- AI TOOL CARDS -->
+          <div class="ai-tools-grid" id="aiToolsGrid">
+
+            <!-- Tools will be rendered here by JavaScript -->
+
+          </div>
+
+          <div class="ai-empty-state" id="aiEmptyState" hidden>
+            <h3>No matching AI tools</h3>
+            <p>Try another search term or category.</p>
+          </div>
+
+        </section>
+
+        <!-- PROMPT LIBRARY -->
+        <section class="ai-prompt-section">
+
+          <div class="section-heading">
+            <div>
+              <span class="section-label">STUDY SMARTER</span>
+              <h2>Nursing Prompt Library</h2>
+            </div>
+          </div>
+
+          <p>
+            Ready-made prompts to help you get more useful results
+            from AI assistants.
+          </p>
+
+         
+<div class="ai-prompt-toolbar">
+
+  <input
+    type="search"
+    id="aiPromptSearch"
+    placeholder="Search nursing prompts..."
+  >
+
+  <select id="aiPromptCategory">
+    <option value="all">All Prompt Categories</option>
+    <option value="Learning">Learning</option>
+    <option value="Anatomy">Anatomy</option>
+    <option value="Pharmacology">Pharmacology</option>
+    <option value="Clinical Learning">Clinical Learning</option>
+    <option value="Examination">Examination</option>
+    <option value="Clinical Skills">Clinical Skills</option>
+    <option value="Research">Research</option>
+    <option value="Academic Writing">Academic Writing</option>
+    <option value="Revision">Revision</option>
+    <option value="Productivity">Productivity</option>
+    <option value="Terminology">Terminology</option>
+  </select>
+
+</div>
+
+<div class="ai-prompt-results">
+  <span id="aiPromptCount">25 prompts available</span>
+</div>
+
+<div class="ai-prompt-grid" id="aiPromptGrid">
+  <!-- Prompts will be rendered here by JavaScript -->
+</div>
+
+<div class="ai-empty-state" id="aiPromptEmptyState" hidden>
+  <h3>No matching prompts</h3>
+  <p>Try another search term or category.</p>
+</div>
+
+        </section>
+
+        <!-- RESPONSIBLE AI USE -->
+        <section class="ai-guidelines">
+
+          <div class="ai-guidelines-icon">💡</div>
+
+          <div>
+            <h3>Use AI Responsibly</h3>
+            <p>
+              AI tools are learning assistants, not replacements for
+              your lecturers, textbooks, clinical supervision or
+              professional judgement. Verify important information
+              using credible nursing and medical sources. Never upload
+              identifiable patient information.
+            </p>
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <script src="/js/ai-hub.js"></script>
+
+</body>
+</html>

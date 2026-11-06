@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Leaderboard | The Nursing Vanguard</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+  >
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside
+      class="sidebar"
+      id="sidebar"
+    >
+
+      <div class="sidebar-brand">
+        <img
+          src="/assets/logo.jpg"
+          alt="The Nursing Vanguard"
+        >
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <a
+          href="/member"
+          class="nav-item"
+        >
+          <span>🏠</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          href="/learning.html"
+          class="nav-item"
+        >
+          <span>📝</span>
+          <span>Learning Record</span>
+        </a>
+
+        <a
+          href="/leaderboard.html"
+          class="nav-item active"
+        >
+          <span>🏆</span>
+          <span>Leaderboard</span>
+        </a>
+
+        <a href="/profile.html" class="nav-item">
+  <span>👤</span>
+  <span>My Profile</span>
+</a>
+
+     <a href="/courses.html" class="nav-item">
+  <span>📚</span>
+  <span>My Courses</span>
+</a>
+
+      <a href="/library.html" class="nav-item">
+  <span>📚</span>
+  <span>Library</span>
+</a>
+
+        <a
+          href="#"
+          class="nav-item"
+        >
+          <span>🤖</span>
+          <span>AI Hub</span>
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <button
+          class="nav-item logout-btn"
+          id="logoutBtn"
+        >
+          <span>🚪</span>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+      class="mobile-overlay"
+      id="mobileOverlay"
+    ></div>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          ☰
+        </button>
+
+        <div class="topbar-user">
+
+          <div
+            class="user-avatar"
+            id="userAvatar"
+          >
+            U
+          </div>
+
+          <div>
+            <strong id="topUserName">
+              Vanguard Member
+            </strong>
+
+            <small id="topUserId">
+              TNV/000
+            </small>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- PAGE -->
+      <section class="page-content">
+
+        <div class="page-header">
+
+          <div>
+
+            <span class="eyebrow">
+              COMMUNITY
+            </span>
+
+            <h1>
+              Vanguard Leaderboard
+            </h1>
+
+            <p>
+              See how members are progressing
+              through learning, consistency and
+              academic participation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CURRENT USER -->
+        <section
+          class="leaderboard-highlight"
+          id="currentUserCard"
+        >
+
+          <div>
+
+            <span>
+              YOUR CURRENT RANK
+            </span>
+
+            <strong id="currentRank">
+              —
+            </strong>
+
+          </div>
+
+          <div>
+
+            <span>
+              XP
+            </span>
+
+            <strong id="currentXp">
+              0 XP
+            </strong>
+
+          </div>
+
+          <div>
+
+            <span>
+              STREAK
+            </span>
+
+            <strong id="currentStreak">
+              0 days
+            </strong>
+
+          </div>
+
+        </section>
+
+
+        <!-- LEADERBOARD -->
+        <section class="leaderboard-card">
+
+          <div class="section-heading">
+
+            <div>
+              <h2>
+                Community Rankings
+              </h2>
+
+              <p>
+                Rankings are based primarily
+                on XP, with streak used as a
+                tiebreaker.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div
+            class="leaderboard-list"
+            id="leaderboardList"
+          >
+
+            <div class="leaderboard-loading">
+              Loading leaderboard...
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="/js/leaderboard.js"></script>
+
+</body>
+
+</html>

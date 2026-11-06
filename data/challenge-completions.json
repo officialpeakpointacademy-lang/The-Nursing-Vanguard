@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CMP-1793820557463",
+    "challengeId": "CH-1793820078688",
+    "userId": "TNV/011",
+    "userName": "Ojo Ayo-Oluwa Olalekan",
+    "status": "completed",
+    "startedAt": "2026-11-04T19:29:17.536Z",
+    "completedAt": "2026-11-04T19:30:16.336Z",
+    "xpAwarded": 20
+  },
+  {
+    "id": "CMP-1793822772032",
+    "challengeId": "CH-1793820078688",
+    "userId": "TNV/001",
+    "userName": "Adebayo Aishat Jumoke",
+    "status": "completed",
+    "startedAt": "2026-11-04T20:06:12.035Z",
+    "completedAt": "2026-11-04T20:06:33.633Z",
+    "xpAwarded": 20
+  }
+]
